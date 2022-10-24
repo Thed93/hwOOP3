@@ -2,7 +2,7 @@ package ru;
 
 import java.time.LocalDate;
 
-public class transport {
+public abstract class transport {
 
 private final String brand;
 private final String model;
@@ -75,4 +75,6 @@ private int maxSpeed;
     public void setMaxSpeed(int maxSpeed) {
         this.maxSpeed = maxSpeed;
     }
+
+    public abstract void refill();
 }
