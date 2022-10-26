@@ -1,4 +1,4 @@
-package ru;
+package Transport;
 
 public class Train extends transport{
    private int trainCost;

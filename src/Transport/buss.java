@@ -1,4 +1,4 @@
-package ru;
+package Transport;
 
 public class buss extends transport {
     public buss(String brand, String model, int yearOfIssue, String country, String bodyColor, int maxSpeed) {
