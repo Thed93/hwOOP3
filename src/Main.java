@@ -1,7 +1,7 @@
 import Animals.*;
 import Transport.Car;
 import Transport.Train;
-import Transport.buss;
+import Transport.Buss;
 
 public class Main {
     public static void main(String[] args) {
@@ -22,9 +22,9 @@ public class Main {
 
         System.out.println(lastochka + "\n" + leningrad);
 
-        buss icarus = new buss("Икарус", "Желтый", 1990, "Россия", "желтый", 60);
-        buss gazelle = new buss("Газель", "Маршрутка", 2015, "Россия", null, 100);
-        buss schoolBus = new buss("Школьный", "Автобус", 2000, "Канада", "желтый", 60);
+        Buss icarus = new Buss("Икарус", "Желтый", 1990, "Россия", "желтый", 60);
+        Buss gazelle = new Buss("Газель", "Маршрутка", 2015, "Россия", null, 100);
+        Buss schoolBus = new Buss("Школьный", "Автобус", 2000, "Канада", "желтый", 60);
 
         System.out.println("\n" + icarus + "\n" + gazelle + "\n" + schoolBus);
 

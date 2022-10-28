@@ -7,11 +7,7 @@ public class Predators extends Mammal{
 
     public Predators(String animalName, int numberOfLegs, String livingEnvironment, int movementSpeed, String typeOfFood) {
         super(animalName, numberOfLegs, livingEnvironment, movementSpeed);
-        if (typeOfFood == null || typeOfFood.isEmpty() || typeOfFood.isBlank()) {
-            this.typeOfFood = "другие животные";
-        } else {
-            this.typeOfFood = typeOfFood;
-        }
+        setTypeOfFood(typeOfFood);
     }
 
     public String getTypeOfFood() {

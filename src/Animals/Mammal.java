@@ -8,16 +8,8 @@ public abstract class Mammal extends Animals {
 
     public Mammal(String animalName, int numberOfLegs, String livingEnvironment, int movementSpeed) {
         super(animalName, numberOfLegs);
-        if (livingEnvironment == null || livingEnvironment.isBlank() || livingEnvironment.isEmpty()) {
-            this.livingEnvironment = "среда проживания не определена";
-        } else {
-            this.livingEnvironment = livingEnvironment;
-        }
-        if (movementSpeed <= 0) {
-            this.movementSpeed = 10;
-        } else {
-            this.movementSpeed = movementSpeed;
-        }
+        setLivingEnvironment(livingEnvironment);
+        setMovementSpeed(movementSpeed);
     }
 
     public String getLivingEnvironment() {

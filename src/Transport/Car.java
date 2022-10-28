@@ -2,7 +2,7 @@ package Transport;
 
 import java.time.LocalDate;
 
-public class Car extends transport {
+public class Car extends Transport {
     @Override
     public void refill() {
         System.out.println(" можно заправлять бензином, дизелем на заправке или заряжать на специальных электропарковках, если это электрокар");

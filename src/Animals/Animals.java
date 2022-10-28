@@ -7,11 +7,7 @@ public abstract class Animals {
     private final int numberOfLegs;
 
     public Animals(String animalName, int numberOfLegs) {
-        if (animalName == null || animalName.isEmpty() || animalName.isBlank()) {
-            this.animalName = "Дружок";
-        } else {
-            this.animalName = animalName;
-        }
+        setAnimalName(animalName);
         if (numberOfLegs < 0) {
             throw new RuntimeException("Укажите положительное колличсетво лап");
         } else {

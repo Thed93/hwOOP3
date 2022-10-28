@@ -2,7 +2,7 @@ package Transport;
 
 import java.time.LocalDate;
 
-public abstract class transport {
+public abstract class Transport {
 
 private final String brand;
 private final String model;
@@ -11,7 +11,7 @@ private final String country;
 private String bodyColor;
 private int maxSpeed;
 
-    public transport(String brand, String model, int yearOfIssue, String country, String bodyColor, int maxSpeed) {
+    public Transport(String brand, String model, int yearOfIssue, String country, String bodyColor, int maxSpeed) {
         if (brand == null || brand.isEmpty() || brand.isBlank()) {
             this.brand = "данные не указаны";
         } else {

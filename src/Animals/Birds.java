@@ -7,11 +7,7 @@ public abstract class Birds extends Animals{
 
     public Birds(String animalName, int numberOfLegs, String livingEnvironment) {
         super(animalName, numberOfLegs);
-        if (livingEnvironment == null || livingEnvironment.isBlank() || livingEnvironment.isEmpty()) {
-            this.livingEnvironment = "среда проживания не определена";
-        } else {
-            this.livingEnvironment = livingEnvironment;
-        }
+        setLivingEnvironment(livingEnvironment);
     }
 
     public String getLivingEnvironment() {

@@ -9,15 +9,19 @@ public class NotFlying extends Birds {
 
     public NotFlying(String animalName, int numberOfLegs, String livingEnvironment, String typeOfMovement) {
         super(animalName, numberOfLegs, livingEnvironment);
+       setTypeOfMovement(typeOfMovement);
+    }
+
+    public String getTypeOfMovement() {
+        return typeOfMovement;
+    }
+
+    public void setTypeOfMovement(String typeOfMovement) {
         if (typeOfMovement == null || typeOfMovement.isBlank() || typeOfMovement.isEmpty()) {
             this.typeOfMovement = "перебирает лапками";
         } else {
             this.typeOfMovement = typeOfMovement;
         }
-    }
-
-    public String getTypeOfMovement() {
-        return typeOfMovement;
     }
 
     public void walk() {
